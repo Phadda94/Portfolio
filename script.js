@@ -33,7 +33,7 @@ function closeMenuOnClickOutside(event) {
 window.addEventListener('resize', function() {
     const navbarList = document.getElementById('navbar-list');
     const menuButton = document.getElementById('menuButton');
-    if (window.innerWidth > 820) {
+    if (window.innerWidth > 768) {
         // Desktop: Show navbar and hide menu button
         navbarList.style.display = 'flex';
         menuButton.style.display = 'none';
@@ -43,3 +43,5 @@ window.addEventListener('resize', function() {
         menuButton.style.display = 'block';
     }
 });
+
+
