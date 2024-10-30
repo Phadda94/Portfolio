@@ -383,6 +383,10 @@ p {
     font-weight: bold;
 }
 
+.projects-grid img {
+    width: 50%
+}
+
 
                                 /*########### CONTACT PAGE ###########*/
 /*########################################################################################################*/
@@ -428,12 +432,12 @@ p {
     }
     
     main, .section-content {
-        margin-top: 100px;
+        margin-top: 180px;
         margin-bottom: 60px;
     }
     
     h1, h2 {
-        font-size: 2.8em;
+        font-size: 2em;
     }
     
     p {
@@ -449,6 +453,7 @@ p {
     #index-content p {
         justify-self: center;
         color: #00C896;
+        margin-top: 10px;
     }
 
     
@@ -469,7 +474,7 @@ p {
     .fixed-header .navbar ul {
         display: none;
         flex-direction: column;
-        margin: auto;
+        float: left;
         gap: 10px;
         background-color: #072F33; 
         position: relative;
