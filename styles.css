@@ -306,12 +306,14 @@ p {
 
 .mySkills {
     margin-top: -100px;
-    font-size: 0.6em;
+    font-size: 0.5em;
 }
 
 .mySkills h1 {
     color:#ffffff;
 }
+
+
 
 .certificates-vertical {
     display: flex;
@@ -399,6 +401,10 @@ p {
     color: #ffffff;
 }
 
+#contact p {
+    font-size: 1.6em;
+}
+
 #mail-box {
     zoom: 170%;
     transition: transform 0.8s;
@@ -481,6 +487,7 @@ p {
     .menu-btn {
         display: block;
         z-index: 1;
+        margin-top: 100px;
     }
     
     #menuButton {
@@ -489,8 +496,10 @@ p {
 
 
     #about-content {
-        margin-top: 5em;
+        margin-top: 150px;
+        width: 105%;
     }
+
 
 
     .fixed-header {
@@ -512,7 +521,7 @@ p {
     }
 
     .mySkills {
-        margin-top: 30%;
+        margin-top: 140px;
         z-index: -1;
     }
 
