@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio - [Page Name]</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="fixed-header" id="header">
+        <nav class="navbar">
+            <ul id="navbar-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="menu-btn" onclick="toggleMenu()" id="menuButton">☰</button>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <div id="about-content">
+            <h2>About Me</h2>
+                <div>
+                    <img style="width: 35%;" id="federico" src="assets/federico.nocornice.svg" alt="Federico Ciceri">
+                </div>
+            <p>A musician with experience in sound design and web development, I am constantly studying to improve my knowledge every day and establish myself in the IT world.</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="fixed-footer">
+        <div class="footer-content">
+            <a href="https://www.linkedin.com/in/federico-ciceri-a6b57a1a5/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Phadda94" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:federico.cice@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

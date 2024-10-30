@@ -1,0 +1,1013 @@
+* {
+    color: #01DBAF;
+    background-color: #072F33;
+    margin: 0;
+    font-family: Poppins;
+    font-weight: 400;
+    zoom: 100%;
+}
+
+/* #################################################################################### */
+
+
+@media only screen and (min-width: 960px), (resolution: 96dpi) {
+    /* Styles for desktop view */
+    
+        /* INDEX.HTML */
+
+
+    body {
+        background-color: transparent;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    #btn {
+        display: none;
+    }
+
+
+    #menu-bar {
+        background-color: #01DBAF;
+        width: 100%;
+        padding-top: 1.4cqmax;
+        padding-bottom: 1.4cqmax;
+    }
+
+
+    #menu-box {
+        list-style: none;
+        background-color: transparent; 
+        display: flex;
+        justify-content: space-around;
+        transition: 1s;
+
+    }
+
+
+    li {
+        display: inline-block;
+        text-align: center;
+        justify-content: space-around;
+        font-size: 2cqmax;
+        color: #3A7876;
+        background-color: transparent;
+    } 
+
+
+    #active {
+        color: white;
+    }
+
+    .menu-btn-active {
+        color: #3A7876;
+        border-radius: 3em;
+        padding: 0.5em 2em;
+        background-color: #072F33;
+        min-width: 4em;
+    }
+
+    .menu-btn {
+        color: #3A7876;
+        border-radius: 3em;
+        padding: 0.5em 2em;
+        background-color: transparent;
+        min-width: 4em;
+        transition: 0.4s;
+    }
+
+
+    a {
+        text-decoration: none;
+    }
+
+    .menu-btn:hover {
+        color: #072F33;
+    }
+
+
+
+    #cont-box {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5%;
+        justify-content:center ;
+    }
+
+
+    #dev {
+        margin: auto;
+        margin-top: 8%;
+        margin-left: 15%;
+        width: 30%;
+        font-size: 1.5cqmax;
+    }
+
+
+
+    h2 {
+        margin-left: 13%;
+    }
+
+
+
+    #fede {
+        width: 25cqmax;
+        height: fit-content;
+        margin: auto;
+        margin-right: 15%;
+        margin-top: 6cqmin;
+        position: sticky;
+        background-color: transparent;
+        color: #072F33;
+        opacity: 0.85;
+        border-radius: 10%;
+        border: solid 3px #01DBAF;
+        color: #072F33;
+        box-shadow:
+        inset 0 0 10px #072F33,      /* inner white */
+        inset 20px 0 10px #072F33,   /* inner left magenta short */
+        inset -20px 0 10px #072F33,  /* inner right cyan short */
+        inset 10px 0 10px #01DBAF,  /* inner left magenta broad */
+        inset -10px 0 10px #01DBAF, /* inner right cyan broad */
+        0 0 30px #01DBAF,            /* outer white */
+        -2px 0px 10px #01DBAF,        /* outer left magenta */
+        5px 0 10px #01DBAF;         /* outer right cyan */
+        
+
+    }
+
+
+    #footer {
+        height: 4.5cqmax;
+        width: 100%;
+        background-color:#01DBAF;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        bottom: 0%;
+        
+    }
+
+
+    #linkd {
+
+        background-color: transparent;
+        border-radius: 50%;
+        width: 3.5cqmax;
+        margin-top: 15%;
+        transition: 0.3s;
+    }
+
+    #in {
+        background-color: transparent;
+    }
+    
+
+    #linkd:hover {
+        background-color: white;
+    }
+
+    
+    #btn-box {
+        position: fixed;
+        height: 7.5cqmax;
+        width: 7.5cqmax;
+        margin-top: 21%;
+        margin-right: 40%;
+        background-color:#01DBAF;
+        border-radius: 50%;
+        box-shadow:
+        inset 0 0 50px #072F33,      /* inner white */
+        inset 20px 0 80px #072F33,   /* inner left magenta short */
+        inset -20px 0 80px #072F33,  /* inner right cyan short */
+        inset 10px 0 80px #01DBAF,  /* inner left magenta broad */
+        inset -20px 0 300px #072F33, /* inner right cyan broad */
+        0 0 30px #01DBAF,            /* outer white */
+        -2px 0px 10px #01DBAF,        /* outer left magenta */
+        5px 0 10px #01DBAF;         /* outer right cyan */
+        transition: 1s;
+        color: #072F33;
+
+    }
+
+
+    #btn-box:hover {
+        box-shadow:
+        inset 0 0 50px white,      /* inner white */
+        inset 20px 0 80px #01DBAF,   /* inner left magenta short */
+        inset -20px 0 80px #01DBAF,  /* inner right cyan short */
+        inset 20px 0 200px white,  /* inner left magenta broad */
+        inset -20px 0 200px white, /* inner right cyan broad */
+        0 0 60px white,            /* outer white */
+        -3px 0 40px #01DBAF,        /* outer left magenta */
+        3px 0 40px #01DBAF;          /* outer right cyan */
+        width: 8cqmax;
+        height: 8cqmax;
+    }
+    
+    
+    #cv {
+        font-size: 1.5cqmax;
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+        border-radius: 50%;
+        border: transparent;
+        transition: 1s;
+    }  
+    
+    
+    #cv:hover {
+        font-size: 1.8cqmax;
+        color: #072F33;
+        text-shadow: #3A7876 -1px 1px 2px;
+        font-weight: 600;
+    }   
+
+
+
+
+
+
+/* #################################### SKILLS PAGE ################################# */
+
+/* ################################################################################## */
+
+
+
+    /* Styles for desktop view */
+    
+        /* SKILLS.HTML */
+
+
+
+    .logos {
+        max-width: 9cqmin;
+        margin: 2cqmin;
+        background-color: transparent;
+
+    }
+
+    .logo-box {
+        border-radius: 4%;
+        transition: 185ms;
+    }
+    
+    
+    .logo-box:hover {
+        background-color: #3A7876;
+
+    }
+    
+    
+    #logo-container {
+        display: flex;
+        justify-self: center;
+        background-color: transparent;
+        justify-content: space-around;
+        margin: 4cqmin 30cqmin 0 30cqmin;
+    }
+
+
+    figcaption {
+        color: white;
+        display: inline;
+        width: 100%;
+        text-align: center;
+        font-size: 2cqmax;
+        font-weight: 600;
+        margin-top: 2cqmax;
+        margin-bottom: 1%;
+        color: #01DBAF;
+        border-top: solid #01DBAF;
+        background-color: #072F33;
+    }
+
+
+    
+    #cert-box {
+        display: inline-block;
+        margin-left: -3%;
+    }
+    
+    
+    
+    #cert-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10%;
+
+    }    
+
+
+
+    .cert-cont {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+
+    .cert-img {
+        margin-top: -2.5%;
+        width: 40cqmax;
+        opacity: 0.75;
+        border-top: 2px solid #3A7876;
+        transition: 0.8s;
+    }
+
+
+
+    .cert-img:hover {
+        opacity: 0.9;
+    }
+
+
+
+    .description {
+        margin: 2cqmax 10cqmax 0 10cqmax;
+        font-size: 1.6cqmax;
+        line-height: 3cqmax;
+    }
+
+    
+    #btn-menu {
+        background-color: transparent;
+        transition: 0.4s;
+        border-radius: 10%;
+    }
+
+
+    #btn-menu:hover {
+        background-color: #3A7876;
+    }
+
+
+    #pag-top {
+        position: fixed;
+        margin-top: 55cqmin;
+        margin-left: -10cqmin;
+        margin-right: 10cqmin;
+        background-color: transparent;
+    }
+
+
+
+
+/* ################################### CONTACT PAGE #################################### */
+
+/* ###################################################################################### */
+
+
+
+    #contact {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    #cont-me {
+        margin: 0;
+        text-align: center;
+        font-size: 5cqmax;
+        margin-top: 3%;
+    }
+
+
+    #mail-box {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 3%;
+    }
+
+
+
+    #mail-logo {
+        width: 10cqmax;
+        position: absolute;
+        border-radius: 10%;
+        transition: .6s;
+    }
+
+
+    #mail-logo:hover {
+        box-shadow: 2px 2px 10px black,
+                    inset 0 0 50px #3A7876;
+        width: 11cqmax;
+    }
+
+
+    #e-mail {
+        position: sticky;
+        text-align: center;
+        font-size: 3cqmax;
+        margin-top: 12%;
+        color: #3A7876;
+    }
+
+
+
+/* #################################### HOBBIES ####################################### */
+
+/* #################################################################################### */
+
+
+
+
+
+    #hobbies{
+        background-image: none;
+    }
+    
+    
+    .hobbies-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 40px;
+        flex-wrap: wrap;
+        margin: 0 8% 15% 8%;
+        margin-top: 5%;
+    }
+    
+    
+    .hobbies-container p {
+        background-color: transparent;
+        max-width: 85%;
+        font-size: 1.6cqmax;
+        font-weight: 400;
+        letter-spacing: 1.2px;
+        line-height: 35px;
+        text-align: justify;
+        margin: auto;
+        margin-top: 52%;
+        margin-bottom: 15%;
+    }
+    
+    
+    .isola a {
+        display: grid;
+        width: fit-content;
+        margin: auto;
+    }
+    
+    
+    .soundsreal a {
+        display: grid;
+        width: fit-content;
+        margin: auto;
+    }
+    
+
+    .comfy-penguins a {
+        display: grid;
+        width: fit-content;
+        margin: auto;
+    }
+    
+    .hobbies-container img {
+        width: 30cqmax;
+        justify-self: center;
+        transition: 1s;
+        position: absolute;
+        margin-top: 2%;
+    }
+    
+    
+    .hobbies-container img:hover {
+        width: 32cqmax;
+    }
+
+
+
+
+
+}
+
+/* ####################################################################################### */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ######################################################################################## */
+
+
+@media only screen and (max-width: 959px) {
+    /* Styles for mobile view */
+
+         /* INDEX.HTML */
+
+    body {
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    #menu-bar {
+        background-color: #01DBAF;
+        max-width: 100%;
+        height: fit-content;
+        display: none;
+    }
+    
+    #menu-box {
+        height: fit-content;
+    }
+
+
+    #btn {
+        background-color: transparent;
+        display: flex;
+        padding: 2%;
+        border: none;
+        margin: auto;
+        margin-top: 10%;
+        border-radius: 15%;
+        transition: .3s;
+        visibility: visible;
+    }
+
+
+    #btn:hover {
+        cursor: pointer;
+        background-color: #3A7876;
+    }
+
+
+    #head-list {
+        font-size: 3.5cqmin;
+        background-color: #01DBAF;
+        list-style: none;
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin-left: -40px;
+    }
+    
+
+    #active{
+        color: white;
+    }
+
+    
+    a {
+        text-decoration: none;
+        color:#3A7876;
+    }
+
+
+    .menu-btn-active {
+        color: #3A7876;
+        border-radius: 3em;
+        padding: 0.5em 2em;
+        background-color: #072F33;
+        min-width: 4em;
+    }
+
+
+    .menu-btn {
+        color: #3A7876;
+        border-radius: 3em;
+        padding: 0.5em 2em;
+        background-color: transparent;
+        min-width: 4em;
+    }
+    
+
+    #cont-box {
+        background-color: transparent;
+    }
+
+
+    #dev {
+        margin: 6cqmax 20% 0 20%;
+        width: 70%;
+        font-size: 3cqmin;
+    }
+
+
+
+    h1 {
+        font-size: 8cqmin;
+        margin: auto;
+    }
+
+
+    h2 {
+        margin: auto;
+        width: 85.8%;  
+    }
+
+
+
+    #fede {
+        width: 50%;
+        height: fit-content;    
+        margin-left: 24%;
+        margin-top: 15%;
+        opacity: 0.7;
+        border-radius: 10%;
+        border: solid 5px #01DBAF;
+        box-shadow:
+        inset 0 0 50px #072F33,      /* inner white */
+        inset 20px 0 80px #072F33,   /* inner left magenta short */
+        inset -20px 0 80px #072F33,  /* inner right cyan short */
+        inset 10px 0 80px #01DBAF,  /* inner left magenta broad */
+        inset -20px 0 300px #072F33, /* inner right cyan broad */
+        0 0 30px #01DBAF,            /* outer white */
+        -2px 0px 10px #01DBAF,        /* outer left magenta */
+        5px 0 10px #01DBAF;         /* outer right cyan */
+        color: #072F33;
+
+
+    }
+    
+
+
+    #footer {
+        width: 100%;
+        display: flex;
+        padding: 1% 0 1% 0;
+        background-color:#01DBAF;
+        margin-top: 10%;
+        position: fixed;
+        justify-content: center;
+        bottom: 0;
+        
+        
+    }
+    
+
+
+    #in {
+        display: flex;
+        background-color: transparent;
+        border-radius: 50%;
+ 
+    }
+
+
+    #linkd {
+        background-color: transparent;
+        border-radius: 50%;
+        width: 7cqmin;
+    }
+
+
+    #linkd:hover {
+        background-color: white;
+    }
+
+
+    #btn-box {
+        height: 20cqmin;
+        width: 20cqmin;
+        position:relative;
+        margin-left: 40%;
+        margin-top: 15%;
+        background-color:#01DBAF;
+        border-radius: 50%;
+        margin-bottom: 17%;
+        box-shadow:
+        inset 0 0 50px #072F33,      /* inner white */
+        inset 20px 0 80px #072F33,   /* inner left magenta short */
+        inset -20px 0 80px #072F33,  /* inner right cyan short */
+        inset 10px 0 80px #01DBAF,  /* inner left magenta broad */
+        inset -20px 0 300px #072F33, /* inner right cyan broad */
+        0 0 30px #01DBAF,            /* outer white */
+        -2px 0px 10px #01DBAF,        /* outer left magenta */
+        5px 0 10px #01DBAF;         /* outer right cyan */
+        transition: 0.8s;
+        color: #072F33;
+
+    }
+
+
+    #btn-box:hover {
+        box-shadow:
+        inset 0 0 50px white,      /* inner white */
+        inset 20px 0 80px #01DBAF,   /* inner left magenta short */
+        inset -20px 0 80px #01DBAF,  /* inner right cyan short */
+        inset 20px 0 200px white,  /* inner left magenta broad */
+        inset -20px 0 200px white, /* inner right cyan broad */
+        0 0 60px white,            /* outer white */
+        -3px 0 40px #01DBAF,        /* outer left magenta */
+        3px 0 40px #01DBAF;          /* outer right cyan */
+        width: 21cqmin;
+        height: 21cqmin;
+        margin-left: 39%;
+    }
+    
+    
+    #cv {
+        color: #01DBAF;
+        font-size: 2.5cqmax;
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+        border-radius: 50%;
+        border: transparent;
+        transition: 0.8s;
+    }  
+    
+    
+    #cv:hover {
+        color: #072F33;
+        font-size: 3.2cqmax;
+        box-shadow: 0px 0px 20px #072F33;
+    }
+
+
+/* #################################### SKILLS PAGE ################################# */
+
+/* ################################################################################## */
+
+
+
+
+ /* Styles for desktop view */
+ 
+    /* SKILLS.HTML */
+    .logos {
+        max-width: 9cqmin;
+        display: flex;
+        margin: auto;
+        background-color: transparent;
+    }
+
+    
+    
+    #logo-container {
+        display: flex;
+        margin-top: 4cqmin;
+        justify-content: space-around;
+        width: auto;
+
+
+    }
+
+
+
+    .logo-box {
+        border-radius: 4%;
+        transition: 185ms;
+        width: 12%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        background-color: transparent;
+    }
+    
+    
+    .logo-box:hover {
+        background-color: #3A7876;
+
+    }
+
+
+    figcaption {
+        color: white;
+        border-top: solid #01DBAF;
+        background-color: #072F33;
+        display: inline-flex;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        font-size: 4cqmin;
+        margin-top: 5cqmin;
+    }
+
+
+    
+    #cert-box {
+        display: inline;
+        justify-content: center;
+        align-self: center;
+        height: fit-content;
+    }
+
+
+    
+    #cert-list {
+        margin-left: -5cqmax;
+        margin-bottom: 13cqmax;
+        margin-top: 0cqmax;
+    }    
+
+
+
+    .cert-cont {
+        display: flex;
+        flex-wrap: wrap;
+        width: fit-content;
+        justify-content: center;
+    }
+
+
+
+    .cert-img {
+        width: 70cqmin;
+        opacity: 0.75;
+        transition: 185ms;
+    }
+
+
+    .cert-img:hover {
+        opacity: 0.88;
+    }
+
+
+    .description {
+        margin: 2cqmax 10cqmax 0 10cqmax;
+        font-size: 3cqmin;
+        text-align: center;
+    }
+
+
+    #btn-menu {
+        transition: 0.4s;
+        border-radius: 10%;
+    }
+    
+    
+    #btn-menu:hover {
+        background-color: #3A7876;
+    }
+    
+    
+    #pag-top {
+        position: fixed;
+    }
+
+
+
+/* ################################### CONTACT PAGE #################################### */
+
+/* ###################################################################################### */
+
+
+
+    #contact {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        margin-top: 8cqmax;
+
+    }
+
+    #cont-me {
+        margin: 0;
+        text-align: center;
+        font-size: 5cqmax;
+        margin-top: 3%;
+        width: 100%;
+    }
+
+
+    #mail-box {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 3%;
+    }
+
+
+
+    #mail-logo {
+        width: 10cqmax;
+        position: absolute;
+        border-radius: 10%;
+        transition: .6s;
+    }
+
+
+    #mail-logo:hover {
+        box-shadow: 2px 2px 10px black,
+                    inset 0 0 50px #3A7876;
+        width: 11cqmax;
+    }
+
+
+    #e-mail {
+        position: sticky;
+        text-align: center;
+        font-size: 3cqmax;
+        margin-top: 10cqmax;
+        color: #3A7876;
+    }
+
+
+
+
+/* #################################### HOBBIES ####################################### */
+
+/* #################################################################################### */
+
+
+
+
+
+    #hobbies{
+        background-image: none;
+    }
+
+
+    .hobbies-container {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 40px;
+        flex-wrap: wrap;
+        margin: 14% 5% 0 5%;
+    }
+
+
+    .hobbies-container p {
+        background-color: transparent;
+        max-width: 85%;
+        font-size: 2cqmax;
+        font-weight: 400;
+        letter-spacing: 1.2px;
+        line-height: 35px;
+        text-align: justify;
+        margin: auto;
+        margin-top: 40%;
+        margin-bottom: 15%;
+    }
+
+
+    .isola a {
+        display: grid;
+        width: fit-content;
+        margin: auto;
+    }
+
+
+    .soundsreal a {
+        display: grid;
+        width: fit-content;
+        margin: auto;
+    }
+
+
+    .comfy-penguins a {
+        display: grid;
+        width: fit-content;
+        margin: auto;
+    }
+
+    .hobbies-container img {
+        width: 50cqmin;
+        justify-self: center;
+        transition: 1s;
+        position: absolute;
+        margin-top: 2%;
+        background-color: transparent;
+    }
+
+
+    .hobbies-container img:hover {
+        width: 32cqmax;
+    }
+
+
+}
+
+
+
+
+
+    
+    
+    
+
+
+
+    
+
+
+
+
+
