@@ -487,8 +487,7 @@ p {
         gap: 10px;
         background-color: #072F33; 
         position: relative;
-        transform: translateX(-780%);
-        margin-right: 1em;
+        transform: translateX(-820%);
         top: 60px;
         padding: 10px;
         border-bottom: 3px solid #00C896;
@@ -563,7 +562,6 @@ p {
     }
     
     .skills-header {
-        flex-wrap: wrap;
         position: fixed;
         display:grid;
         padding: 10px;
@@ -591,7 +589,7 @@ p {
     }
 
     .certificate-section img {
-        max-width: 300px;
+        max-width: 40cqmax;
     }
 
     .certificate-section img:hover {
