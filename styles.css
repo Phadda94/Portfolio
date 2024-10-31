@@ -395,6 +395,7 @@ p {
 .projects-grid {
     font-size: 0.6em;
     font-weight: bold;
+    display: inline-flex;
 }
 
 .projects-grid img {
