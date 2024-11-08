@@ -399,8 +399,17 @@ p {
 }
 
 .projects-grid img {
-    width: 50%
+    width: 50%;
+    transition: .6s;
+    opacity: 70%;
 }
+
+.projects-grid img:hover {
+    scale: 1.2;
+    opacity: 100%;
+}
+
+
 
 
                                 /*########### CONTACT PAGE ###########*/
