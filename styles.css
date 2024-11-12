@@ -453,6 +453,7 @@ p {
     body {
         overflow-y: auto; /* Enable scrolling for mobile */
         background-image: none;
+        max-width: 100%;
     }
     
     main, .section-content {
@@ -609,6 +610,12 @@ p {
 
     #projects-content {
         margin-top: 35cqmin;
+        display: table-column;
+    }
+
+    .projects-grid {
+        display: table-cell;
+        vertical-align: middle;
     }
 
     #contact {
