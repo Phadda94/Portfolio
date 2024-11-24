@@ -1,0 +1,542 @@
+
+
+body {
+    margin: 0;
+    background-color: #072F33;
+    font-size: larger;
+    color: #ffffff;
+    justify-content: center;
+    font-family: Poppins;
+}
+
+#head-bar {
+    background-color: #072F33;
+    justify-items: center;
+    border-bottom: 1px solid #3A7876;
+    height: 3.5em;
+    align-content: center;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#head-menu {
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    font-size: 3cqmin;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+
+#head-menu li {
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    color:#00C896;
+}
+
+.menu-item:hover {
+    cursor: pointer;
+    color:#ffffff;
+    transition: .4s;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+#index {
+    height: 38em;
+    width: 100%;
+    transition: 1s;
+    display: inline-flex;
+    margin-top: 4%;
+}
+
+
+#title {
+    align-content: center;
+    margin-left: 15%;
+    font-size: 1.5em;
+    color: #00C896;
+}
+
+#title h1 {
+    font-weight: 400;
+    width: fit-content;
+    margin-bottom: 0;
+    font-size: 5cqmax;
+}
+
+#title h2 {
+    font-weight: 400;
+    width: fit-content;
+    margin-top: 0;
+    font-size: 2.5cqmax;
+}
+
+
+#cv-box {
+    align-content: center;
+    margin: auto;
+}
+
+
+.cv-button {
+    display: inline-block;
+    padding: 15px; 
+    color: #00C896;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 500;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    transition: box-shadow 0.8s, background-color 2s, color 0.8s;
+    box-shadow:
+    inset 0 0 50px #072F33,      
+    inset 20px 0 80px #072F33,  
+    inset -20px 0 80px #072F33,  
+    inset 10px 0 80px #01DBAF,  
+    inset -20px 0 300px #072F33,
+    0 0 30px #01DBAF,           
+    -2px 0px 10px #01DBAF,    
+    5px 0 10px #01DBAF;         
+}
+
+.cv-button:hover {
+    background-color: #00C896;
+    color: #072F33;
+    box-shadow:
+    inset 0 0 50px white,      /* inner white */
+    inset 20px 0 80px #01DBAF,   /* inner left magenta short */
+    inset -20px 0 80px #01DBAF,  /* inner right cyan short */
+    inset 20px 0 200px white,  /* inner left magenta broad */
+    inset -20px 0 200px white, /* inner right cyan broad */
+    0 0 60px white,            /* outer white */
+    -3px 0 40px #01DBAF,        /* outer left magenta */
+    3px 0 40px #01DBAF;          /* outer right cyan */
+}
+
+
+
+
+/* ###################### SKILLS PAGE #################### */
+
+#skills {
+    align-content: center;
+    transform: translateY(100%);
+    display: none;
+    transition: 1s;
+    width: 100%;
+    
+}
+
+.skills-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    gap: 25px;
+    padding-top: 50px;
+    position: sticky;
+    top: 50px;
+    z-index: 10;
+}
+
+.skill-icon {
+    font-size: 3em;
+    color: #3A7876;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.skill-icon:hover {
+    color: #00C896;
+    transform: scale(1.1);
+}
+
+.my-skills {
+    justify-items: center;
+}
+
+.my-skills h2 {
+    color:#ffffff;
+    font-weight: 400;
+    font-size: 2.5cqmax;
+    margin-top: 10cqmin;
+}
+
+.my-skills p {
+    font-size: 1.5cqmax;
+    align-self: center;
+}
+
+
+.certificates-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    z-index: 0;
+}
+
+.certificate-section {
+    text-align: center;
+    position: relative;
+    margin-bottom: 90px;
+}
+
+.certificate-section h2 {
+    margin-top: auto;
+    font-size: 2cqmax;
+    font-weight: 400;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #3A7876;
+    color: #00C896;
+}
+
+.certificate-section img {
+    width: 30cqmax;
+    border-radius: 8px;
+    transition: transform 0.8s ease;
+    background-color: #3A7876;
+}
+
+.certificate-section img:hover {
+    transform: scale(1.5);
+}
+
+.certificate-section a.download-link {
+    display: inline-block;
+    max-width: fit-content;
+}
+
+
+.section-divider {
+    width: 100%;
+    border: 1px solid #3A7876;
+    margin: 20px 0;
+}
+
+
+
+
+/*################### PROJECTS PAGE ###################*/
+
+
+#projects-content {
+    font-size: 1.5rem;
+    justify-self: center;
+    justify-items: center;
+}
+
+#projects-content h2 {
+    font-weight: 400;
+    margin-top: 8rem;
+}
+
+#projects-content p {
+    color: #ffffff;
+}
+
+.project {
+    justify-items: center;
+    justify-self: center;
+    max-width: 100%;
+}
+
+.project p {
+    margin: 0;
+    margin-top: 2rem;
+    color: #00C896;
+    font-weight: 400;
+    font-size: 2cqmax;
+}
+
+.projects-grid {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    max-width: 100%;
+    margin: auto;
+}
+
+
+.projects-grid img {
+    scale: 0.7;
+    opacity: 0.7;
+    max-width: 100%;
+    margin: 0;
+    transition: .6s;
+}
+
+.projects-grid img:hover {
+    scale: 0.8;
+    opacity: 1;
+}
+
+#projects {
+    transform: translateY(100%);
+    height: 40rem;
+    max-width: 100%;
+    transition: 1s;
+    display: none;
+    margin-top: 5%;
+    font-size: 1cqmax;
+    font-weight: 400;
+}
+
+
+/* ############ ABOUT PAGE ############# */
+
+#about {
+    display: none;
+    transform: translateY(200%);
+    margin-top: 20cqmin;
+    transition: 0.8s;
+}
+
+
+#about-content {
+    justify-items: center;
+    
+}
+
+
+#about-content h2 {
+    color: #ffffff;
+    font-weight: 400;
+    justify-self: center;
+}
+
+#about-content p {
+    font-size: 1.5cqmax;
+    width: 80%;
+}
+
+
+#federico-box {
+    display: flex;
+    justify-items: center;
+}
+
+#federico {
+    margin: auto;
+    background-color: transparent;
+    color: #072F33;
+    opacity: 0.85;
+    border-radius: 30%;
+    color: #072F33;
+    box-shadow:
+    inset 0 0 10px #072F33,      /* inner white */
+    inset 20px 0 10px #072F33,   /* inner left magenta short */
+    inset -20px 0 10px #072F33,  /* inner right cyan short */
+    inset 10px 0 10px #01DBAF,  /* inner left magenta broad */
+    inset -10px 0 10px #01DBAF, /* inner right cyan broad */
+    0 0 30px #01DBAF,            /* outer white */
+    -2px 0px 10px #01DBAF,        /* outer left magenta */
+    5px 0 10px #01DBAF;         /* outer right cyan */
+}
+
+
+
+/*############# Footer with Centered Icons #############*/
+.fixed-footer {
+    background-color: #072F33;
+    color: #00C896;
+    border-top: 1px solid #3A7876;
+    width: 100%;
+    height: 60px; /* Uniform height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    gap: 20px; /* Spacing between icons */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-content a {
+    color: inherit;
+    text-decoration: none !important;
+    font-size: 1.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s;
+}
+
+.footer-content a:hover {
+    color: #ffffff;
+    text-decoration: none;
+    transform: scaleX(110%) scaleY(110%);
+}
+
+
+/*########### CONTACT PAGE ###########*/
+
+
+#contact #mail-box img {
+    vertical-align: auto;
+    justify-content: center;
+}
+
+#contact {
+    justify-items: center;
+    transform: translateY(300%);
+    transition: 0.8s;
+    display: none;
+    margin-top: 20%;
+}
+
+#contact h2 {
+    color: #ffffff;
+}
+
+#contact p {
+    font-size: 2cqmax;
+}
+
+#mail-box {
+    zoom: 170%;
+    transition: transform 0.8s;
+}
+
+#mail-box:hover {
+    transform: scaleX(120%) scaleY(120%)
+}
+
+
+
+@media(max-width: 768px) {
+    
+    #index {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        height: 600px;
+    }
+    
+    #index title {
+        background-color: yellowgreen;
+        font-size: 1cqmax;
+    }
+    
+    #title h1 {
+        margin-top: 35cqmax;
+        font-size: 10cqmin;
+    }
+    
+    #title h2 {
+        font-size: 6cqmin;
+    }
+    
+    .cv-button {
+        scale: 0.9;
+    }
+
+
+    #skills {
+    }
+
+    .my-skills h2 {
+        font-size: 7cqmin;
+        margin-top: 15%;
+    }
+
+    #skills p {
+        font-size: 2.5cqmin;
+        align-self: center;
+        width: fit-content;
+        margin: 5%;
+    }
+
+
+    .certificates-vertical {
+
+    }
+
+    .certificates-vertical a {
+        width: 1cqmin;
+    }
+    
+    
+    .certificate-section {
+        height: fit-content;
+        margin-bottom: 0px;
+    }
+    
+
+    .certificate-section h2 {
+        margin-top: 0px;
+    }
+    
+
+    .certificate-section a {
+        width: fit-content;
+    }
+    
+    .certificate-section img {
+        width: 35cqmax;
+        background-color: #3A7876;
+    }
+
+
+    #projects {
+        scale: 0.8;
+        align-self: center;
+        width: 100%;
+        height: fit-content;
+        margin-top: 0px;
+    }
+    
+    .projects-grid {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    #projects h2 {
+        font-size: 7cqmin;
+        margin-top: auto;
+    }
+
+
+    #projects p {
+        font-size: 4cqmin;
+    }
+
+
+    #about {
+        margin-top: 40%;
+    }
+
+    #about p {
+        font-size: 3cqmin;
+    }
+
+    #contact {
+        margin-top: 50cqmin;
+    }
+}

@@ -1,42 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Federico Ciceri's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    </style>
-</head>
-<body>
-    <!-- Header -->
-    <header class="fixed-header" id="header">
-        <nav class="navbar">
-            <ul id="navbar-list">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Federico's Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+    </head>
+
+    <body>
+
+        <!---------------HEADER----------------->
+
+        <header id="head-bar">
+            <ul id="head-menu">
+                <li class="menu-item" id="btn-home">Home</li>
+                <li class="menu-item" id="btn-skills">Skills</li>
+                <li class="menu-item" id="btn-projects">Projects</li>
+                <li class="menu-item" id="btn-about">About</li>
+                <li class="menu-item" id="btn-contact">Contact</li>
             </ul>
-        </nav>
-        <button class="menu-btn" onclick="toggleMenu()" id="menuButton">☰</button>
-    </header>
-    
-    <!-- Main Content -->
-    <main>
-        <div id="index-content">
-            <h1>Hi, I'm <color style="color: #ffffff;">Federico</color></h1>
-            <p>Junior Web Developer</p>
-            <a href="assets/Federico_Ciceri_CV24D.pdf" target="_blank" class="cv-button">Resume</a>
+        </header>
+
+
+        <!--------------INDEX PAGE--------------->
+
+        <div id="index">
+            <div id="title">
+                <h1>Hi, I'm <color style="color:white">Federico</color></h1>
+                <h2>Junior Web Developer</h2>
+            </div>
+            <div id="cv-box">
+                <a href="assets/Federico_Ciceri_CV24D.pdf" target="_blank" class="cv-button">Resume</a>
+            </div>    
         </div>
-    </main>
-    <div id="mascotte">
-        <img src="assets/hero-just-icon.ico">
-    </div>
-    <!-- Footer -->
+
+    
+
+        <!--------------SKILLS PAGE-------------->
+
+        <div id="skills">
+            <div class="skills-header">
+                <a href="#html-cert" title="HTML"><i class="fab fa-html5 skill-icon"></i></a>
+                <a href="#css-cert" title="CSS"><i class="fab fa-css3-alt skill-icon"></i></a>
+                <a href="#js-cert" title="JavaScript"><i class="fab fa-js skill-icon"></i></a>
+                <a href="#github-cert" title="GitHub"><i class="fab fa-github skill-icon"></i></a>
+            </div>
+            <section class="my-skills">
+                <h2>My Skills & Certifications</h2>
+                <p>Below are the certifications I have achieved in various programming languages and tools.</p>
+            </section>    
+            <!-- Vertical Certificates Layout -->
+            <div class="certificates-vertical">
+                <!-- HTML Certificate Section -->
+                <div id="html-cert" class="certificate-section">
+                    <h2>HTML Certificates</h2>
+                    <a href="assets/Cert/pdf/Html_certificate_01.pdf" target="_blank"><img src="assets/Cert/html_cert.svg" alt="HTML Certificate"></a>
+                </div>
+    
+                <hr class="section-divider">
+    
+                <!-- CSS Certificate Section -->
+                <div id="css-cert" class="certificate-section">
+                    <h2>CSS Certificates</h2>
+                    <a href="assets/Cert/pdf/CSS_certificate_01.pdf" target="_blank"><img src="assets/Cert/css_cert.svg" alt="CSS Certificate"></a>
+                </div>
+    
+                <hr class="section-divider">
+    
+                <!-- JavaScript Certificate Section -->
+                <div id="js-cert" class="certificate-section">
+                    <h2>JavaScript Certificates</h2>
+                    <a href="assets/Cert/pdf/Js_certificate_01.pdf" target="_blank"><img src="assets/Cert/Js_cert.svg" alt="JavaScript Certificate"></a>
+                </div>
+    
+                <hr class="section-divider">
+    
+                <!-- GitHub Certificate Section -->
+                <div id="github-cert" class="certificate-section">
+                    <h2>GitHub Certificates</h2>
+                    <a href="assets/Cert/pdf/Git_certificate_01.pdf" target="_blank"><img src="assets/Cert/Github_cert.svg" alt="GitHub Certificate"></a>
+                </div>
+    
+                <hr class="section-divider">  
+            </div>      
+        </div>
+
+
+
+        <!--------------PROJECTS PAGE-------------->
+        <div id="projects">    
+            <div class="header-content" id="projects-content">
+                <h2>My Projects</h2>
+                <p>Explore some of the projects I have worked on.</p>
+            </div>
+            
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <section class="project">
+                    <p>IsolaProduction Site</p>
+                    <a href="https://isolaproduction.it/" class="project-item" target="_blank">
+                        <img src="assets/isolaProject.gif" alt="Project 1">
+                    </a>
+                </section>
+                <section class="project">
+                    <p>KeyboardPiano</p>
+                    <a href="https://federico.world/keyboardPiano/" class="project-item" target="_blank">
+                        <img src="assets/keyboardPiano.gif" alt="Keyboard Piano">
+                    </a>
+                </section>
+                <section class="project">
+                    <p>CaloriesCalculator</p>
+                    <a href="https://federico.world/CaloriesCalculator/" class="project-item" target="_blank">
+                        <img src="assets/CalculateCaloriesVideo.gif" alt="Keyboard Piano">
+                    </a>
+                </section>
+                <!-- Add more project items -->
+            </div>
+        </div>
+
+
+        <!--------------ABOUT PAGE-------------->
+        <div id="about">   
+            <div id="about-content">
+                <div id="federico-box">
+                    <img style="width: 25cqmax;" id="federico" src="assets/federico.nocornice.svg" alt="Federico Ciceri">
+                </div>
+                <h2>About Me</h2>
+                <p>A musician with experience in sound design and web development, I am constantly studying to improve my knowledge every day and establish myself in the IT world.</p>
+            </div>
+        </div>
+
+
+        <!--------------CONTACT PAGE-------------->
+        <div id="contact">
+            <h2>Contact Me</h2>
+            <div id="mail-box">
+                <a href="mailto:federico.cice@gmail.com"><img src="assets/e-mail.svg" id="mail-logo"></a>
+            </div>
+            <p id="e-mail">federico.cice@gmail.com</p>
+        </div>
+
+        <!-- Footer -->
     <footer class="fixed-footer">
         <div class="footer-content">
             <a href="https://www.linkedin.com/in/federico-ciceri-a6b57a1a5/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -45,6 +153,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
-</body>
+
+    <script src="script.js" defer></script>
+    </body>
 </html>

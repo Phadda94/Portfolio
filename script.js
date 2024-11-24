@@ -1,47 +1,124 @@
-function toggleMenu() {
-    const navbarList = document.getElementById('navbar-list');
-    const menuButton = document.getElementById('menuButton');
+const index = document.getElementById("index");
+const skills = document.getElementById("skills");
 
-    if (navbarList.style.display === 'flex') {
-        navbarList.style.display = 'none';
-        menuButton.style.display = 'block';
-    } else {
-        navbarList.style.display = 'flex';
-        menuButton.style.display = 'none';
+const btnSkills = document.getElementById("btn-skills");
+const btnHome = document.getElementById("btn-home");
+
+const projects = document.getElementById("projects");
+const btnProjects = document.getElementById("btn-projects");
+
+const about = document.getElementById("about");
+const btnAbout = document.getElementById("btn-about");
+
+const contact = document.getElementById("contact");
+const btnContact = document.getElementById("btn-contact");
+
+
+function changeToHome() {
+    // Show home page
+    skills.style.transform = "translateY(100%)";
+    projects.style.transform = "translateY(500%)";
+    about.style.transform = "translateY(200%)";
+    contact.style.transform = "translateY(300%)";
+    setTimeout(() => {
+        skills.style.display = "none"; 
+        about.style.display = "none"
+        projects.style.display = "none";
+        contact.style.display = "none";
+
+        index.style.display = "inline-flex";
+
+        setTimeout(() => {
+            index.style.transform = "translateY(0)";
+        }, 50);
+    }, 300); 
+}
+
+
+function changeToSkills() {
+    // Show skills page
+    projects.style.transform = "translateY(500%)";
+    index.style.transform = "translateY(-200%)";
+    about.style.transform = "translateY(200%)";
+    contact.style.transform = "translateY(300%)";
+    setTimeout(() => {
+        index.style.display = "none";
+        about.style.display = "none"
+        projects.style.display = "none"
+        contact.style.display = "none";
+
+        skills.style.display = "block";
+
+        setTimeout(() => {
+            skills.style.transform = "translateY(0%)";
+        }, 100); 
         
-        // Add an event listener to close the menu when clicking outside
-        document.addEventListener('click', closeMenuOnClickOutside);
-    }
+    }, 300);
 }
 
-function closeMenuOnClickOutside(event) {
-    const navbarList = document.getElementById('navbar-list');
-    const menuButton = document.getElementById('menuButton');
-    const header = document.getElementById('header');
 
-    // Check if the click is outside the header
-    if (!header.contains(event.target)) {
-        navbarList.style.display = 'none';
-        menuButton.style.display = 'block';
+function changeToProjects() {
+    // Show projects page
+    index.style.transform = "translateY(-200%)";
+    skills.style.transform = "translateY(-200%)";
+    about.style.transform = "translateY(200%)";
+    contact.style.transform = "translateY(200%)";
+    setTimeout(() => {
+        index.style.display = "none";
+        skills.style.display = "none";
+        about.style.display = "none";
+        contact.style.display = "none";
 
-        // Remove the event listener after the menu is closed
-        document.removeEventListener('click', closeMenuOnClickOutside);
-    }
+        projects.style.display = "block"
+
+        setTimeout(() => {
+            projects.style.transform = "translateY(0%)"
+        }, 100); 
+    }, 300);
 }
 
-// Adjust menu visibility and button visibility on resize
-window.addEventListener('resize', function() {
-    const navbarList = document.getElementById('navbar-list');
-    const menuButton = document.getElementById('menuButton');
-    if (window.innerWidth > 768) {
-        // Desktop: Show navbar and hide menu button
-        navbarList.style.display = 'flex';
-        menuButton.style.display = 'none';
-    } else {
-        // Mobile: Hide navbar and show menu button
-        navbarList.style.display = 'none';
-        menuButton.style.display = 'block';
-    }
-});
+
+function changeToAbout() {
+    index.style.transform = "translateY(-200%)";
+    skills.style.transform = "translateY(-200%)";
+    projects.style.transform = "translateY(-200%)";
+    contact.style.transform = "translateY(300%)"
+    setTimeout(() => {
+        index.style.display = "none";
+        skills.style.display = "none";
+        projects.style.display = "none";
+        contact.style.display = "none";
+
+        about.style.display = "inline-block";
+
+        setTimeout(() => {
+            about.style.transform = "translateY(0%)"
+        }, 100); 
+    }, 300)
+} 
 
 
+function changeToContact() {
+    index.style.transform = "translateY(-200%)";
+    skills.style.transform = "translateY(-200%)";
+    projects.style.transform = "translateY(-200%)";
+    about.style.transform = "translateY(-200%)"
+    setTimeout(() => {
+        index.style.display = "none";
+        skills.style.display = "none";
+        projects.style.display = "none";
+        about.style.display = "none";
+
+        contact.style.display = "block";
+
+        setTimeout(() => {
+            contact.style.transform = "translateY(0%)"
+        }, 100); 
+    }, 300)
+} 
+
+btnSkills.addEventListener("click", changeToSkills);
+btnHome.addEventListener("click", changeToHome);
+btnProjects.addEventListener("click", changeToProjects);
+btnAbout.addEventListener("click", changeToAbout);
+btnContact.addEventListener("click", changeToContact)
