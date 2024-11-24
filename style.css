@@ -168,18 +168,25 @@ a {
 
 .my-skills {
     justify-items: center;
+
+    
 }
 
 .my-skills h2 {
     color:#ffffff;
     font-weight: 400;
     font-size: 2.5cqmax;
+    margin: auto;
     margin-top: 10cqmin;
+    width: fit-content;
 }
 
 .my-skills p {
     font-size: 1.5cqmax;
     align-self: center;
+    margin: auto;
+    width: fit-content;
+
 }
 
 
@@ -240,11 +247,15 @@ a {
     font-size: 1.5rem;
     justify-self: center;
     justify-items: center;
+    margin: auto;
+    width: fit-content;
 }
 
 #projects-content h2 {
     font-weight: 400;
     margin-top: 8rem;
+    margin: auto;
+    width: fit-content;
 }
 
 #projects-content p {
@@ -258,7 +269,8 @@ a {
 }
 
 .project p {
-    margin: 0;
+    margin: auto;
+    width: fit-content;
     margin-top: 2rem;
     color: #00C896;
     font-weight: 400;
@@ -293,7 +305,7 @@ a {
     max-width: 100%;
     transition: 1s;
     display: none;
-    margin-top: 5%;
+    margin-top: 20cqmin;
     font-size: 1cqmax;
     font-weight: 400;
 }
@@ -304,7 +316,7 @@ a {
 #about {
     display: none;
     transform: translateY(200%);
-    margin-top: 20cqmin;
+    margin-top: 16cqmin;
     transition: 0.8s;
 }
 
@@ -318,12 +330,17 @@ a {
 #about-content h2 {
     color: #ffffff;
     font-weight: 400;
+    font-size: 3cqmax;
+    width: fit-content;
+    margin: auto;
+    margin-top: 5%;
     justify-self: center;
 }
 
 #about-content p {
     font-size: 1.5cqmax;
     width: 80%;
+    margin: auto;
 }
 
 
@@ -407,20 +424,29 @@ a {
     transform: translateY(300%);
     transition: 0.8s;
     display: none;
-    margin-top: 20%;
+    margin-top: 30cqmin;
+    align-content: center;
 }
 
 #contact h2 {
+    margin: auto;
+    font-weight: 400;
+    font-size: 3cqmax;
+    width: fit-content;
     color: #ffffff;
 }
 
 #contact p {
     font-size: 2cqmax;
+    width: fit-content;
+    margin: auto;
 }
 
 #mail-box {
     zoom: 170%;
     transition: transform 0.8s;
+    width: fit-content;
+    margin: auto;
 }
 
 #mail-box:hover {
