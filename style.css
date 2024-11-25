@@ -1,5 +1,4 @@
 
-
 body {
     margin: 0;
     background-color: #072F33;
@@ -7,6 +6,7 @@ body {
     color: #ffffff;
     justify-content: center;
     font-family: Poppins;
+    cursor: url("assets/cursore.svg"), auto;
 }
 
 #head-bar {
@@ -44,7 +44,6 @@ body {
 }
 
 .menu-item:hover {
-    cursor: pointer;
     color:#ffffff;
     transition: .4s;
 }
@@ -127,6 +126,7 @@ a {
     0 0 60px white,            /* outer white */
     -3px 0 40px #01DBAF,        /* outer left magenta */
     3px 0 40px #01DBAF;          /* outer right cyan */
+    cursor: url("assets/cursore.svg"), auto;
 }
 
 
@@ -297,6 +297,7 @@ a {
 .projects-grid img:hover {
     scale: 0.8;
     opacity: 1;
+    cursor: url("assets/cursore.svg"), auto;
 }
 
 #projects {
@@ -382,6 +383,7 @@ a {
     position: fixed;
     bottom: 0;
     transition: 0.5s;
+    cursor: url("assets/cursore.svg"), auto;
 }
 
 .footer-content {
@@ -392,6 +394,7 @@ a {
     width: 100%;
     margin: 0;
     padding: 0;
+    cursor: url("assets/cursore.svg"), auto;
 }
 
 .footer-content a {
@@ -402,12 +405,14 @@ a {
     align-items: center;
     justify-content: center;
     transition: 0.6s;
+    cursor: url("assets/cursore.svg"), auto;
 }
 
 .footer-content a:hover {
     color: #ffffff;
     text-decoration: none;
     transform: scaleX(110%) scaleY(110%);
+    cursor: url("assets/cursore.svg"), auto;
 }
 
 
@@ -417,6 +422,7 @@ a {
 #contact #mail-box img {
     vertical-align: auto;
     justify-content: center;
+    cursor: url("assets/cursore.svg"), auto;
 }
 
 #contact {
@@ -447,10 +453,12 @@ a {
     transition: transform 0.8s;
     width: fit-content;
     margin: auto;
+    cursor: url("assets/cursore.svg"), auto;
 }
 
 #mail-box:hover {
-    transform: scaleX(120%) scaleY(120%)
+    transform: scaleX(120%) scaleY(120%);
+    cursor: url("assets/cursore.svg"), auto;
 }
 
 
