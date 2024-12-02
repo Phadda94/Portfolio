@@ -1,3 +1,6 @@
+* {
+    cursor: url("assets/Cursor.png"), auto;
+}
 
 body {
     margin: 0;
@@ -6,7 +9,6 @@ body {
     color: #ffffff;
     justify-content: center;
     font-family: Poppins;
-    cursor: url("assets/cursore.svg"), auto;
 }
 
 #head-bar {
@@ -126,7 +128,7 @@ a {
     0 0 60px white,            /* outer white */
     -3px 0 40px #01DBAF,        /* outer left magenta */
     3px 0 40px #01DBAF;          /* outer right cyan */
-    cursor: url("assets/cursore.svg"), auto;
+    cursor: url("assets/Cursor.png"), auto;
 }
 
 
@@ -164,6 +166,7 @@ a {
 .skill-icon:hover {
     color: #00C896;
     transform: scale(1.1);
+    cursor: url("assets/Cursor.png"), auto;
 }
 
 .my-skills {
@@ -223,6 +226,7 @@ a {
 
 .certificate-section img:hover {
     transform: scale(1.5);
+    cursor: url("assets/Cursor.png"), auto;
 }
 
 .certificate-section a.download-link {
@@ -297,7 +301,7 @@ a {
 .projects-grid img:hover {
     scale: 0.8;
     opacity: 1;
-    cursor: url("assets/cursore.svg"), auto;
+    cursor: url("assets/Cursor.png"), auto;
 }
 
 #projects {
@@ -323,8 +327,7 @@ a {
 
 
 #about-content {
-    justify-items: center;
-    
+    justify-items: center;  
 }
 
 
@@ -334,7 +337,6 @@ a {
     font-size: 3cqmax;
     width: fit-content;
     margin: auto;
-    margin-top: 5%;
     justify-self: center;
 }
 
@@ -383,7 +385,7 @@ a {
     position: fixed;
     bottom: 0;
     transition: 0.5s;
-    cursor: url("assets/cursore.svg"), auto;
+    cursor: url("assets/Cursor.png"), auto;
 }
 
 .footer-content {
@@ -394,7 +396,7 @@ a {
     width: 100%;
     margin: 0;
     padding: 0;
-    cursor: url("assets/cursore.svg"), auto;
+    cursor: url("assets/Cursor.png"), auto;
 }
 
 .footer-content a {
@@ -405,14 +407,14 @@ a {
     align-items: center;
     justify-content: center;
     transition: 0.6s;
-    cursor: url("assets/cursore.svg"), auto;
+    cursor: url("assets/Cursor.png"), auto;
 }
 
 .footer-content a:hover {
     color: #ffffff;
     text-decoration: none;
     transform: scaleX(110%) scaleY(110%);
-    cursor: url("assets/cursore.svg"), auto;
+    cursor: url("assets/Cursor.png"), auto;
 }
 
 
@@ -422,7 +424,7 @@ a {
 #contact #mail-box img {
     vertical-align: auto;
     justify-content: center;
-    cursor: url("assets/cursore.svg"), auto;
+    cursor: url("assets/Cursor.png"), auto;
 }
 
 #contact {
@@ -453,14 +455,24 @@ a {
     transition: transform 0.8s;
     width: fit-content;
     margin: auto;
-    cursor: url("assets/cursore.svg"), auto;
+    cursor: url("assets/Cursor.png"), auto;
 }
 
 #mail-box:hover {
     transform: scaleX(120%) scaleY(120%);
-    cursor: url("assets/cursore.svg"), auto;
+    cursor: url("assets/Cursor.png"), auto;
 }
 
+
+
+
+
+
+
+
+
+/* ##############################################################*/
+/* ####################### MOBILE ##########################*/
 
 
 @media(max-width: 768px) {

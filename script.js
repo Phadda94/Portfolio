@@ -14,6 +14,7 @@ const contact = document.getElementById("contact");
 const btnContact = document.getElementById("btn-contact");
 
 
+
 function changeToHome() {
     // Show home page
     skills.style.transform = "translateY(100%)";
