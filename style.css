@@ -296,6 +296,7 @@ a {
     max-width: 100%;
     margin: 0;
     transition: .6s;
+    border-radius: 20px;
 }
 
 .projects-grid img:hover {
