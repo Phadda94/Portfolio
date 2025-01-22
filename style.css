@@ -202,6 +202,7 @@ a {
     z-index: 0;
 }
 
+
 .certificate-section {
     text-align: center;
     position: relative;
@@ -210,6 +211,7 @@ a {
 
 .certificate-section h2 {
     margin-top: auto;
+    margin: auto;
     font-size: 2cqmax;
     font-weight: 400;
     margin-bottom: 10px;
